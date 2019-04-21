@@ -13,9 +13,9 @@ body {
 
 .display{
     text-align: center;
-    background-color: rgba(179, 216, 230, 0.842);
-    width: 60%;
-    margin: auto;
+    background-color: transparent;
+    min-width: 60%;
+    max-width: 100%;
     margin-top: 3%;
     border-radius: 15px;
     font-family: 'Lobster', cursive;
@@ -31,14 +31,15 @@ body {
     color: red;
 }
 #home-page{
-    width: 60%;
+    background-size: auto;
     margin: auto;
 
 }
 .text{
     border-radius: 15px;
-    border-color: black;
+    border-color: transparent;
     border-style: solid;
+    background-color: rgba(0, 0, 0, 0.637); 
 }
 a {
     font-family: 'Lobster', cursive;
@@ -62,7 +63,11 @@ nav {
 }
 /* Change the link color on hover */
 li a:hover {
-    color:yellow;
+    color:cornflowerblue;
+    background-color: rgba(255, 0, 0, 0.356);
+}
+.nav-link{
+    height: 100%;
 }
 .nav-bar{
     color: yellow;
@@ -83,5 +88,31 @@ li a:hover {
 }
 
 .isActive{
-    background-color: rgb(0, 132, 255);
+    background-color: rgba(179, 216, 230, 0.842);
+    color: yellow;
 }
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 75px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  footer {
+    font-family: 'Lobster', cursive;
+    font-size: large;
+    color: cornflowerblue;
+    background-color: rgba(0, 0, 0, 0.637);
+    padding: 3px;
+    text-align: center;
+  }

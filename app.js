@@ -8,23 +8,27 @@ function PageManager(event) {
     if(page == ""){
         page = "Home";
     }
+    if(page == "Our Story"){
+        page = 'More';
+    }
+    console.log("page is " + page);
     switch (page) {
         case "Home":
-            $('.menu').removeClass('active');
-            $('.home').addClass('active');
-            $('.menu').removeClass('active');
+            $('.menu').removeClass('isActive');
+            $('.home').addClass('isActive');
+            $('.more').removeClass('isActive');
             ChangePage(page);
             break;
         case "Menu":
-            $('.home').removeClass('active');
-            $('.menu').addClass('active');
-            $('.more').removeClass('active');
+            $('.home').removeClass('isActive');
+            $('.menu').addClass('isActive');
+            $('.more').removeClass('isActive');
             ChangePage(page);
             break;
         case "More":
-            $('.home').removeClass('active');
-            $('.menu').removeClass('active');
-            $('.menu').addClass('active');
+            $('.home').removeClass('isActive');
+            $('.menu').removeClass('isActive');
+            $('.more').addClass('isActive');
             ChangePage(page);
             break;
     }
