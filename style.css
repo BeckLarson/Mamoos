@@ -14,8 +14,8 @@ body {
 .display{
     text-align: center;
     background-color: transparent;
-    min-width: 60%;
-    max-width: 100%;
+    width: 850px;
+    margin: auto;
     margin-top: 3%;
     border-radius: 15px;
     font-family: 'Lobster', cursive;
@@ -115,4 +115,33 @@ li a:hover {
     background-color: rgba(0, 0, 0, 0.637);
     padding: 3px;
     text-align: center;
+  }
+  #menu-page{
+background-color: rgba(0, 0, 0, 0.637);
+border-radius: 15px;
+width: 800px;
+margin: auto;
+color: rgba(179, 216, 230, 0.842);
+}
+
+.menu-list{
+    background: transparent;
+    color: cornflowerblue;
+    list-style-image: url('images/cone-dot.png');
+}
+
+@keyframes gold {
+    from {color: goldenrod;}
+    to {color: yellow;}
+  }
+
+  .gold{
+    animation-name: gold;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  .menu-text{
+      font-size: x-large;
   }
