@@ -145,3 +145,20 @@ color: rgba(179, 216, 230, 0.842);
   .menu-text{
       font-size: x-large;
   }
+
+  #foot-con{
+      width: 600px;
+      margin: auto ;
+  }
+  
+  #sig{
+      margin: auto;
+    width: 600px;
+      text-align: center;
+      font-size: small;
+      color: rgba(255, 255, 255, 0.527);
+      z-index: -1;
+  }
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
